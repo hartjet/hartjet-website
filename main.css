@@ -40,6 +40,14 @@ body {
 	font-size: 18px;
 }
 
+.thumb{
+	float: left;
+	display: block;
+	margin: 10px;
+	width: 300px;
+	border: 2 px solid white;
+}
+
 #nav-item:hover:not(.active){
 	background-color: #3A6482;
 }
