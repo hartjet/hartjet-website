@@ -122,3 +122,12 @@ a.hover{
 	padding: 2px;
 	margin: 2px;
 }
+
+.text-box-grey{
+	margin: 0;
+	padding: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color:rgba(26,26,26,0.5);
+	width: 100%;
+}
