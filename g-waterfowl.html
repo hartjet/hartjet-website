@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Galleries -> Birds -> Waterfowl</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="gallery.css">
+</head>
+
+<body>
+
+
+<div class="nav">
+	<a href="index.html"><div id="nav-item-static">TYLER HARTJE <span class="glyphicon glyphicon-camera" style="color: #B14520;" aria-hidden="true"></span>&nbsp; &nbsp;</div></a>
+	<a href="index.html"><div id="nav-item">HOME</div></a>
+	<a href="about.html"><div id="nav-item">ABOUT</div></a>
+	<a href="g-index.html"><div id="nav-item">GALLERIES</div></a>
+	<a href="conservation.html"><div id="nav-item">CONSERVATION</div></a>
+	<a href="http://www.tylerhartjephoto.blogspot.com"><div id="nav-item">BLOG</div></a>
+	<a href="contact.html"><div id="nav-item">CONTACT</div></a>
+	<form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default" style="margin-right: 10px;"><span class="glyphicon glyphicon-search"></button>
+	</form>
+</div>
+
+<div class="main">
+	<center>
+	<div class="main-content" style="width: 90%; padding-top: 65px;">
+
+		<h2 style="text-align:center">Waterfowl</h2>
+
+		<div class="responsive">
+		  <div class="img">
+			  <img src="img/galleries/birds/waterfowl/1.jpg" alt="img" width="300" height="200">
+			<div class="desc">Follow the leader</div>
+		  </div>
+		</div>
+
+		<div class="responsive">
+		  <div class="img">
+			  <img src="img/galleries/birds/waterfowl/2.jpg" alt="img" width="300" height="200">
+			<div class="desc">Duckling reflections</div>
+		  </div>
+		</div>
+		
+		<div class="responsive">
+		  <div class="img">
+			  <img src="img/galleries/birds/waterfowl/3.jpg" alt="img" width="300" height="200">
+			<div class="desc">Catching flies!</div>
+		  </div>
+		</div>
+		
+		<div class="responsive">
+		  <div class="img">
+			  <img src="img/galleries/birds/waterfowl/4.jpg" alt="img" width="300" height="200">
+			<div class="desc">Pied-Billed Grebe</div>
+		  </div>
+		</div>
+		
+		<div class="responsive">
+		  <div class="img">
+			  <img src="img/galleries/birds/waterfowl/5.jpg" alt="img" width="300" height="200">
+			<div class="desc">Harlequin Duck</div>
+		  </div>
+		</div>
+		
+		<div class="responsive">
+		  <div class="img">
+			  <img src="img/galleries/birds/waterfowl/6.jpg" alt="img" width="300" height="200">
+			<div class="desc">Lesser Scaup</div>
+		  </div>
+		</div>
+		
+		<div class="responsive">
+		  <div class="img">
+			  <img src="img/galleries/birds/waterfowl/7.jpg" alt="img" width="300" height="200">
+			<div class="desc">Cleared for landing</div>
+		  </div>
+		</div>
+		
+		<div class="responsive">
+		  <div class="img">
+			  <img src="img/galleries/birds/waterfowl/8.jpg" alt="img" width="300" height="200">
+			<div class="desc">Common Merganser</div>
+		  </div>
+		</div>
+		
+		<div class="responsive">
+		  <div class="img">
+			  <img src="img/galleries/birds/waterfowl/9.jpg" alt="img" width="300" height="200">
+			<div class="desc">Hooded Merganser</div>
+		  </div>
+		</div>
+		
+		<div class="responsive">
+		  <div class="img">
+			  <img src="img/galleries/birds/waterfowl/10.jpg" alt="img" width="300" height="200">
+			<div class="desc">Green-Winged Teal</div>
+		  </div>
+		</div>
+		
+		<div class="responsive">
+		  <div class="img">
+			  <img src="img/galleries/birds/waterfowl/11.jpg" alt="img" width="300" height="200">
+			<div class="desc">Wood Duck</div>
+		  </div>
+		</div>
+		
+		<div class="responsive">
+		  <div class="img">
+			  <img src="img/galleries/birds/waterfowl/12.jpg" alt="img" width="300" height="200">
+			<div class="desc">Wood duck</div>
+		  </div>
+		</div>
+		
+		<div class="clearfix"></div>
+
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+		  <span class="close">×</span>
+		  <img class="modal-content" id="img01">
+		  <div id="caption"></div>
+		</div>
+
+		<script>
+		// Get the modal
+		var modal = document.getElementById('myModal');
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+			modal.style.display = "none";
+		}
+		
+		modal.onclick = function(){
+			modal.style.display = "none";
+		}
+
+		// Get all images and insert the clicked image inside the modal
+		// Get the content of the image description and insert it inside the modal image caption
+		var images = document.getElementsByTagName('img');
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		var i;
+		for (i = 0; i < images.length; i++) {
+		   images[i].onclick = function(){
+			   modal.style.display = "block";
+			   modalImg.src = this.src;
+			   modalImg.alt = this.alt;
+			   captionText.innerHTML = this.nextElementSibling.innerHTML;
+		   }
+		}
+		</script>
+
+		<div style="padding:6px;">
+		  <p style="text-align: center;">All images &copy; Tyler Hartje. </p>
+		</div>
+	</div>
+		</center>
+	<footer>
+		<div class="footer">
+			<div class="footer-element">
+				<p class="footer-title">ABOUT</p>
+				<a href="about.html">About Tyler</a><br>
+				<a href="conservation.html">Conservation</a><br>
+			</div>
+			<div class="footer-element">
+				<p class="footer-title">GALLERIES</p>
+				<a href="g-index-birds.html">Birds</a><br>
+				<a href="g-wildlife.html">Wildlife</a><br>
+				<a href="g-landscapes.html">Landscapes</a><br>
+				<a href="g-san-juan-islands.html">San Juan Islands</a><br>
+				<a href="g-abstract-macro.html">Abstract and Macro</a><br>
+				<a href="g-favorites.html">Favorites</a><br>
+				<a href="g-index.html">All Galleries</a><br>
+			</div>
+			<div class="footer-element">
+				<p class="footer-title">CONNECT</p>
+				<a href="contact.html">Contact</a><br>
+				<a href="http://www.tylerhartjephoto.blogspot.com">Blog</a><br>
+				<a href="events.html">Events</a><br>
+			</div>
+		</div>
+	</footer>
+</div>
+
+</body>
+</html>

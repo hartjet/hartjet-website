@@ -73,15 +73,13 @@ a.hover{
 	padding: 15px;
 }
 
-#pane-left{
-	width: 800px;
-	float: left;
+#pane-small{
+	width: 30%;
 	padding: 10px;
 }
 
-#pane-right{
-	width: 300px;
-	float: right;
+#pane-large{
+	width: 70%;
 	padding: 10px;
 }
 
@@ -91,7 +89,7 @@ a.hover{
 }
 
 #window{
-	width: 1200px;
+	width: 80%;
 	background-color:rgba(51,51,51,0.8);
 	padding: 15px;
 	border: 2px solid white;
