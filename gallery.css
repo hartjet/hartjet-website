@@ -1,6 +1,6 @@
 /* The Image Box */
 div.img {
-    border: 1px solid #ccc;
+    border: 10px solid #ccc;
 	display: inline-block;
 }
 
@@ -10,10 +10,10 @@ div.img:hover {
 
 /* The Image */
 div.img img {
-    /*width: 100%;*/
+    /* width: 100%; */
 	max-width: 300px;
 	max-height: 200px;
-    /*height: auto;*/
+    /* height: auto; */
     cursor: pointer;
 	display: block;
 	object-fit: cover;
