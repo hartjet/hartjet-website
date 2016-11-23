@@ -1,6 +1,6 @@
 /* The Image Box */
 div.img {
-    border: 10px solid #ccc;
+    border: 1px solid #ccc;
 	display: inline-block;
 }
 
